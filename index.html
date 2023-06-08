@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>
+	</title>
+
+	<style type="text/css">
+
+		::-webkit-scrollbar {
+		  width: 15px;
+		}
+
+		.sponsor-container::-webkit-scrollbar {
+		  height: 5px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		  box-shadow: inset 0 0 5px grey; 
+		  border-radius: 10px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+		  border-radius: 10px;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		  background: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6);
+		}
+
+		.mt2 {margin-top: 2em;}
+		.mb2 {margin-bottom: 2em;}
+		.mb10{padding-bottom: 10em;}
+		.mt10{padding-top: 10em;}
+		.mt5{padding-top: 5em;}
+		.mb5{padding-bottom: 5em;}
+		.mb3{padding-bottom: 3em;}
+		.mt3{padding-top: 3em;}
+    	.mt4{margin-top: 4em;}
+    	.mb4{margin-bottom: 4em;}
+
+		body {
+			font-family: 'helveticaregular';
+        }
+        
+        .page-section{
+        	padding-top: 3em;
+        	padding-bottom: 5em;
+        }
+        .calibre{
+        	display: block;
+        	margin-left: auto;
+        	margin-right: auto;
+        	max-width: 1170px;
+        }
+        .navbar-content{
+        	width: 100%;
+		    max-width: 1170px;
+		    margin: auto;
+		    margin-top: 3em;
+        }
+        .menu-list {
+		    padding: 2px 22px;
+		    font-size: 14px;
+		}
+		.menu-list:not(:last-child) {
+		    border-right: 2px solid #fff;
+		}
+		.menu-list a.menu-item {
+		    color: #fff;
+		    text-decoration: none;
+		}
+		.gradiant-gold{
+			background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+		}
+		.btn.gradiant-gold:hover{
+			background: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6);
+		}
+		.btn.gradiant-gold{
+			font-family: 'gilroyextrabold';
+		}
+
+		.header-section-page{
+			min-height: 100vh;
+		}
+		.navbar img.logo{
+			max-width: 205px;
+		}
+        .header-section-page{
+        	background-image: url('assets/img/5.png');
+        	background-size: cover!important;
+		    -webkit-background-size: cover!important;
+		    background-repeat: no-repeat !important;
+        }
+        .header-section-page .zone-text{
+        	text-align: center;
+        }
+        .color1{color: #e2c877}
+        .text-gradiant-white-black{
+        	background: linear-gradient(to bottom, #fff, #767676);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+        }
+        .text-gradiant-hello-gold{
+        	font-family: 'gilroyextrabold';
+        	background: linear-gradient(to bottom, #b3842c, #916225, #f9f1b6, #f9f1b6);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+        }
+        .text-gradiant-hello-gold-light{
+        	font-family: 'gilroyextrabold';
+        	background: linear-gradient(to bottom, #b3842c, #f9f1b6, #f9f1b6);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+        }
+        .text-gradiant-black-gold{
+        	background: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+        }
+        .header-section-page .title-1{
+        	font-size: 2.5rem;
+        	font-family: 'gilroyextrabold';
+        }
+        .header-section-page .title-2{
+        	font-size: 2rem;
+        	font-family: 'gilroyextrabold';
+        	margin-top: 4px;
+
+        }
+        .header-section-page .title-3{
+        	font-size: 20px;
+        	font-family: 'gilroyextrabold';
+        	margin-top: 28px
+        }
+
+        .video-wrapper{
+        	margin-top: 50px;
+        }
+        .video-content iframe.video{
+        	border-width: 5px;
+	      border-image: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6) 1;
+	      border-style: solid;
+	      border-radius: 8px;
+	      margin-bottom: 25px;
+        }
+
+        .section-img-jeremy-1{
+		    padding-top: 5em;
+		    position: relative;
+		    padding-bottom: 3em;
+        }
+        .section-img-jeremy-1::before, .section-deroulement::before {
+        	content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: "";
+			position: absolute;
+			background-image: url('assets/img/2.png');
+				background-size: cover!important;
+			    -webkit-background-size: cover!important;
+			    background-repeat: no-repeat !important;
+			filter: blur(8px);
+			z-index: -1;
+		}
+		.section-deroulement::before{
+			filter: blur(15px);
+		}
+		.overlay {
+	      position: absolute;
+	      top: 0;
+	      left: 0;
+	      width: 100%;
+	      height: 100%;
+	      background-color: rgba(0, 0, 0, 0.5);
+	      z-index: -1;
+	    }
+	        
+        .section-img-jeremy-1 .img-jeremy img{
+        	display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 387px;
+        }
+
+
+        .section-img-jeremy-1 .description {
+        	border-image: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6) 1;
+			border-style: solid;
+			border-width: 3px;
+			margin-bottom: 25px;
+        	display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    background: #000;
+		    color: #fff;
+		    text-align: center;
+		    max-width: 755px;
+		    padding: 30px 36px;
+		    line-height: 1.9em;
+		    font-size: 26px;
+		    background-image: url(assets/img/10-satin.jpg);
+		    background-size: cover !important;
+		    -webkit-background-size: cover !important;
+		    background-repeat: no-repeat !important;
+		    position: relative;
+		    margin-top: -71px;
+		    font-family: 'helveticabold';
+        }
+        .page-section-Jdedie-container .description-wrapper {
+		    background: #000;
+		    color: #fff;
+		    text-align: center;
+		    background-image: url(assets/img/10-satin.jpg);
+		    background-size: cover !important;
+		    -webkit-background-size: cover !important;
+		    background-repeat: no-repeat !important;
+		    position: relative;
+		    font-family: 'helveticabold';
+		    padding: 90px 10px;
+    		text-align: left;
+    		border-radius: 25px;
+    		box-shadow: 0px 10px 20px 0px rgb(23 23 23 / 60%) !important;
+        }
+        .bg-commun{
+        	background: #000;
+		    color: #fff;
+		    background-image: url(assets/img/10-satin.jpg);
+		    background-size: cover !important;
+		    -webkit-background-size: cover !important;
+		    background-repeat: no-repeat !important;
+        }
+        .sponsor-container{
+        	overflow-x: auto;
+		    padding-bottom: 12px;
+		    margin-top: 35px;
+        }
+        .sponsor-item img{
+        	width: 166px;
+    		margin-right: 30px;
+        }
+
+        .page-section-Jdedie .title-1{
+        	text-align: center;
+		    font-family: 'gilroyextrabold';
+		    max-width: 915px;
+		    margin: auto;
+		    color: #b3842c
+        }
+
+        
+        .page-section-Jdedie-container{margin-top: 34px}
+        .page-section-Jdedie-container >*{flex: 1;}
+        .page-section-Jdedie-container .description-content{
+        	max-width: 373px;
+    		margin: auto;
+        }
+        .page-section-Jdedie-container .description-content p{
+        	margin-bottom: 3rem;
+    		line-height: 2rem;
+        	font-family: 'helveticaregular';
+    		font-size: 18px;
+        }
+        .page-section-Jdedie-container .img-wrapper{
+        	position: relative;
+        	overflow-y: hidden;
+        }
+        .page-section-Jdedie-container .img-wrapper > img{
+        	position: absolute;
+        	right: 0;
+        	max-width: calc(100% - 85px);
+        }
+        .overlay2{
+        	position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 1;
+		    background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0) 53%);
+        }
+        .page-section-Jdedie-container .vertical-name{
+        	writing-mode: vertical-rl;
+		    transform: rotate(180deg);
+		    font-family: 'gilroyextrabold';
+		    text-align: center;
+		    position: absolute;
+		    left: 0;
+		    z-index: 1;
+		    letter-spacing: 16px;
+        }
+
+        .section-equipe{
+        	background-image: url('assets/img/11.png');
+        	background-size: cover!important;
+		    -webkit-background-size: cover!important;
+		    background-repeat: no-repeat !important;
+		    margin-top: 160px;
+        }
+        .section-equipe .ttl{
+        	color: #fff;
+        	font-size: 34px;
+        	font-family: 'gilroyextrabold';
+        }
+        .section-equipe .equipe-list{margin-top: 4em;}
+        .section-equipe .equipe-list:nth-child(even) .equipe-item{flex-direction: row-reverse;}
+        .section-deroulement .list:nth-child(even) > .item{flex-direction: row-reverse;}
+
+        .equipe-item-nom{
+        	writing-mode: vertical-rl;
+		    font-family: 'gilroyextrabold';
+		    text-align: center;
+		    left: 0;
+		    z-index: 1;
+		    margin: 0;		    
+		    font-size: 37px;
+        }
+        .equipe-item .img-wrapper{
+        	width: 491px;
+		    background: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6);
+		    border-radius: 11px;
+		    height: 400px;
+		    position: relative;
+		    box-shadow: 0px 10px 20px 0px rgb(23 23 23 / 60%) !important;
+        }
+        .equipe-item .img-wrapper img{
+        	width: 100%;
+		    position: absolute;
+		    bottom: 0;
+		    border-radius: 11px;
+        }
+        .equipe-item-description-container{
+        	width: 589px;
+		    padding: 70px 57px 54px;
+		    background-color: rgb(1 0 0 / 80%);
+		    backdrop-filter: blur(7px);
+		    position: relative;
+		    border-width: 2px;
+		    border-color: rgb(18 17 18);
+		    color: #fff;
+		    font-size: 22px;
+		    border-radius: 20px;
+		    box-shadow: 0px 10px 20px 0px rgb(23 23 23 / 61%) !important;
+		    border: 1px solid rgb(30 30 31);
+        }
+        .section-equipe .equipe-list:nth-child(odd) .equipe-item-description-container{
+        	transform: scale(1) translate(-23px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+        }
+        .section-equipe .equipe-list:nth-child(even) .equipe-item-description-container{
+        	transform: scale(1) translate(23px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+        }
+        .equipe-item-description-container .title-nom, .section-deroulement .description-container .title-nom{
+		    background: linear-gradient(to right, #b3842c, #e2c877, #f9f1b6);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    font-family: 'gilroyextrabold';
+        }
+        .section-deroulement .description-container .title-nom{
+        	margin-top: 25px;
+        }
+        .section-equipe .equipe-list:nth-child(odd) .equipe-item-nom{
+        	background: linear-gradient(to left, #fff, #8f8f8f);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    margin-right: -3px;
+		    transform: rotate(180deg);
+        }
+        .section-equipe .equipe-list:nth-child(even) .equipe-item-nom{
+        	background: linear-gradient(to right, #fff, #8f8f8f);
+        	-webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    margin-left: -3px;
+		    transform: rotate(360deg);
+        }
+        .text-color{color: #f9f1b6}
+        u.color{
+        	background: linear-gradient(180deg, #ffffff00 60%, rgba(238, 253, 54, 0.4) 30%) !important;
+		    display: inline !important;
+		    text-decoration: none;
+        }
+
+        .section-deroulement .ttl{
+        	max-width: 660px;
+		    margin: auto;
+		    line-height: 1.5em;
+		    color: #212529;
+		    font-size: 34px;
+		    font-family: 'gilroyextrabold';
+        }
+        .section-deroulement{position: relative;}
+        .text-rotation{
+        	webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    transform: rotate(180deg);
+        }
+        .section-deroulement .list:nth-child(odd) .equipe-item-nom{
+            color: #212529;
+		    transform: rotate(180deg);
+
+        }
+
+        .section-deroulement .list:nth-child(even) .equipe-item-nom{
+        	color: #212529;
+		    transform: rotate(360deg);
+        }
+
+        .section-deroulement .description-container{
+        	position: relative;
+        	width: 750px;
+        	padding: 42px 57px 25px;
+		    border-width: 2px;
+		    border-color: rgb(18 17 18);
+		    color: #fff;
+		    font-size: 22px;
+		    border-radius: 20px;
+		    box-shadow: 0px 10px 20px 0px rgb(23 23 23 / 61%) !important;
+
+		    background-image: url(assets/img/jeremy2.png);
+		    background-size: cover !important;
+		    -webkit-background-size: cover !important;
+		    background-repeat: no-repeat !important;
+        }
+        .section-deroulement .description-container .overlay {
+        	background: linear-gradient(to right, #000, rgb(0 0 0 / 80%), rgb(189 189 189 / 50%));
+        	z-index: 0;
+        	border-radius: 20px;
+        }
+        .picto-deroulement-clock{
+        	display: inline-block;
+		    padding: 5px;
+		    border-radius: 10px;
+		    background: linear-gradient(to left, #b3842c, #e2c877, #f9f1b6);
+        }
+        .picto-deroulement-container .text-stape{
+        	color: #cf962a;
+		    font-size: 15px;
+		    font-weight: bold;
+		    margin-left: 7px;
+        }
+        .section-deroulement .list:nth-child(odd) .fleche-stape{
+        	position: absolute;
+		    z-index: 2;
+		    right: -267px;
+		    top: 61%;
+		    height: 210px;
+        }
+        .section-deroulement .list:nth-child(even) .fleche-stape{
+        	position: absolute;
+		    z-index: 2;
+		    left: -267px;
+		    top: 61%;
+		    height: 210px;
+		    transform: perspective(1000px) rotateY(180deg);
+        }
+        .map-container{
+        	padding: 0 15px;
+        	width: 350px;
+        }
+        .map-description{
+		    position: relative;
+		    box-shadow: 0px 10px 20px 0px rgb(207 205 205 / 61%) !important;
+		    background-image: url(assets/img/jeremy2-1.png);
+		    background-size: cover !important;
+		    -webkit-background-size: cover !important;
+		    background-repeat: no-repeat !important;
+		    border-radius: 15px;
+		    height: 100%
+        }
+        .map-description-container{
+        	padding: 19px 40px;
+    		font-size: 17px;
+    		line-height: 1.9rem;
+    		color: #212529;
+        }
+        .map-cart{
+        	width: 776px;
+		    height: 234px;
+		    border-radius: 9px;
+        }
+
+        .map-description .overlay{
+        	background: linear-gradient(to top, #fff, rgb(255 255 255), rgb(189 189 189 / 50%));
+		    z-index: 0;
+		    border-radius: 15px;
+        }
+
+        .cart-item{
+        	padding: 16px 11px; 
+        	width: 351px;
+        	height: 529px;
+        }
+        .cart-item-container{
+		    border-radius: 16px;
+		    padding: 24px 28px;
+		    color: #fff;
+		    position: relative;
+		    background-image: url(assets/img/jeremy2-1.png);
+		    background-size: cover !important;
+		    -webkit-background-size: cover !important;
+		    background-repeat: no-repeat !important;
+		    height: 100%;
+        }
+        .cart-item-container .overlay{
+        	background: linear-gradient(to top, #000, rgb(33 33 33 / 90%), rgb(33 31 31 / 85%));
+		    z-index: 0;
+		    border-radius: 15px;
+        }
+        .text-gradiant-gold{
+        	background: linear-gradient(to right, #b3842c, #e2c877, #f9f1b6);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+        }
+        .cart-item-content .ttle{
+        	font-size: 23px;
+		    text-align: center;
+		    margin: 24px 0;
+		    font-family: 'gilroyextrabold';
+        }
+        .cart-item-content .map-pointer{
+		    font-family: 'gilroyextrabold';
+        }
+        .cart-item-content .list-horaire{
+        	font-size: 18px;
+    		line-height: 1.8em;
+        }
+        .cart-item-content .list-horaire .horaire-item{
+        	font-size: 18px;
+    		line-height: 2em;
+        }
+        .cart-item-content .list-horaire .horaire-item > i.fa-check{
+        	font-size: 25px;
+        }
+        .cart-item-content .desc{
+        	text-align: center;
+    		margin-top: 17px;
+        }
+        .offre-page .title-1 {
+        	text-align: center;
+		    font-family: 'gilroyextrabold';
+		    max-width: 915px;
+		    margin: auto;
+		    color: #b3842c;
+        }
+        .offre-item{
+        	width: 480px;
+    		padding: 0px 12px;
+        }
+        .offre-item-container{
+		    background: rgb(41, 41, 41);
+		    border-radius: 14px;
+		    padding: 56px 30px;
+        }
+
+        .offre-item-container .title-1{
+        	color: rgb(255, 255, 255);
+		    text-align: center;
+		    font-family: 'gilroyextrabold';
+		    font-size: 43px;
+		    letter-spacing: 1px;
+        }
+
+        .offre-cart{
+        	margin-top: 62px;
+        }
+
+        .offre-option-container{
+        	color: #fff;
+    		margin-top: 30px;
+        }
+
+        .offre-option-item{
+        	line-height: 2rem;
+    		font-size: 21px;
+    		margin-right: 13px;
+    		margin-top: 18px;
+        }
+
+        .offre-option-item i.fa{
+    		margin-right: 13px;
+        }
+
+        .offre-option-item i.gold{
+        	color: #c3ac63;
+        }
+        .offre-option-item i.times{
+        	color: rgb(228, 59, 44);
+        }
+        .ticket-montant{
+        	font-size: 90px;
+		    font-family: 'gilroyextrabold';
+		    line-height: 69px;
+		}
+
+		.offre-item-container .dashed{
+			border-style: dashed;
+		    border-color: #fff;
+		    margin-top: 56px;
+		    border-bottom: none;
+		}
+		.offre-item-container .dashed-top{
+			margin-top: 22px;
+		    border-color: #c3ac63;
+		    max-width: 90%;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		.offre-footer{
+			padding-top: 49px;
+		    text-align: center;
+		    color: #fff;
+		}
+
+		.img-content-ticket{
+			background: #fff;
+		    padding: 9px;
+		    border-radius: 50%;
+		}
+
+		.suis-je{
+			background: #000;
+		    color: #fff;
+		    background-image: url(assets/img/10-satin.png);
+		    background-size: cover !important;
+		    -webkit-background-size: cover !important;
+		    background-repeat: no-repeat !important;
+		    padding-bottom: 0;
+		}
+		.suis-je .img-container{
+			padding: 13px 22px;
+			position: relative;
+		    padding-bottom: 0;
+		    width: 500px;
+		}
+		.suis-je .img-container > img.img-jeremy{
+			position: absolute;
+		    bottom: 0;
+		    width: 100%;
+		}
+		.suis-je .description{
+			max-width: 659px;
+    		padding: 13px 18px 43px;
+    		text-align: justify;
+		}
+		.suis-je .description .nom{
+			font-family: 'gilroyextrabold';
+		    font-size: 38px;
+		    margin-bottom: 25px;
+		}
+
+		.suis-je .description .text-box{
+			font-size: 20px;
+    		line-height: 2.4rem;
+		}
+
+		.soire-section .text-soire{
+			position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    text-align: center;
+		    width: 100%;
+		    background: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    font-size: 4.5rem;
+		    font-family: 'gilroyextrabold';
+		}
+		.soire-section img{
+			width: 100%;
+		    max-height: 800px;
+		    object-fit: cover;
+		}
+		.soire-section .overlay{
+			background: linear-gradient(to top, rgb(33 31 31 / 27%), rgb(33 31 31 / 27%));
+		    z-index: 0;
+		    border-radius: 15px;
+		}
+	</style>
+</head>
+<body>
+
+	<main>
+
+		<div class="page-section header-section-page">
+			
+			<!--- début topbar -->
+			<div class="navbar">
+				<div class="navbar-content d-flex justify-content-between align-item-center">
+					<div class="img-container">
+						<img src="assets/img/logo goldFichier 3.png" class="logo">
+					</div>
+					<div class="menu-container d-flex align-items-center">
+						<div class="menu-list">
+							<a href="" class="menu-item">QUI EST JÉRÉMY DJÉFAL ?</a>
+						</div>
+						<div class="menu-list">
+							<a href="" class="menu-item">PROGRAMME DE LA JOURNÉE</a>
+						</div>
+						<div class="menu-list">
+							<a href="" class="menu-item">F.A.Q</a>
+						</div>
+					</div>
+					<div class="foat-btn">
+						<span class="btn gradiant-gold btn-lg">RÉSERVER MA PLACE</span>
+					</div>
+				</div>
+			</div>
+			<!--- fin topbar -->
+
+			<!--  debut section video -->
+			<div class="calibre">
+				<div class="zone-text">
+					<div class="title-1 text-gradiant-black-gold">TOUT COMMENCE ICI</div>
+					<h1 class="title-2 text-gradiant-hello-gold">METZ, FRANCE | 21 OCTOBRE 2021</h1>
+
+					<h4 class="title-3 text-gradiant-white-black">GAGNEZ 10 ANS D’EXPÉRIENCE EN 1 JOURNÉE</h4>
+				</div>
+
+				<div class="video-wrapper text-center">
+					<div class="video-content">
+						<iframe class="video" width="800" height="415" src="https://www.youtube.com/embed/7QtkXrkAj9U" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<div class="text-center">
+						<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+					</div>
+				</div>
+			</div>
+			<!--  Fin section video -->
+
+		</div>
+
+		<div class="page-section section-img-jeremy-1">
+			<div class="overlay"></div>
+			<div class="img-jeremy">
+				<img src="assets/img/jeremy2-1.png" width="300px">
+			</div>
+			<div class="description">
+				<p>GAGNEZ 10 ANS D’EXPÉRIENCE EN 1 JOURNÉE GR CE AUX PLUS GRANDS NOMS DE L’ENTREPRENEURIAT FRANCOPHONE</p>
+
+				<div class="sponsor-container">
+					<div class="sponsor-list d-flex align-items-center justify-content-center">
+						<div class="sponsor-item">
+							<img src="assets/img/logo-small-white.png" class="sponsor">
+						</div>
+						<div class="sponsor-item">
+							<img src="assets/img/logo-small-white.png" class="sponsor">
+						</div>
+						<div class="sponsor-item">
+							<img src="assets/img/logo-small-white.png" class="sponsor">
+						</div>
+						<div class="sponsor-item">
+							<img src="assets/img/logo-small-white.png" class="sponsor">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section page-section-Jdedie">
+			<div class="calibre">
+				<h2 class="title-1">LA JOURNÉE DÉDIÉE À LA CROISSANCE DES PERSONNES ORDINAIRES QUI VEULENT DES RÉSULTATS EXTRAS-ORDINAIRES</h2>
+
+				<div class="page-section-Jdedie-container d-flex align-items-stretch justify-content-center">
+					<div class="img-wrapper">
+						<h1 class="vertical-name">JÉRÉMY DJÉFAL</h1>
+						<div class="overlay2"></div>
+						<img src="assets/img/jeremy1.png"> 
+					</div>
+					<div class="description-wrapper">
+						<div class="description-content">
+							<p>Ne laissez pas votre passé définir votre avenir. </p>
+							<p>C'est le moment de prendre votre destin en main et de tracer votre propre voie vers le succès.</p>
+
+							<p>Business Day est bien plus qu'un simple événement entrepreneurial.</p>
+
+							<p>C'est une véritable célébration de l'esprit d'entreprise, où vous pourrez vous immerger dans un environnement propice à l'inspiration, à l'apprentissage et aux opportunités.</p>
+
+							<p style="margin-bottom: 1rem">Ensemble, nous allons:</p>
+							<div class="d-flex align-items-start">
+								<i class="fa fa-solid fa-check" style="margin-right: 12px; color: #e2c877; font-size: 27px"></i>
+								<span>briser les barrières</span></div>
+							<div class="d-flex align-items-start" style="margin: 20px 0;">
+								<i class="fa fa-solid fa-check" style="color: #e2c877; font-size: 27px; margin-right: 12px;"></i>
+								<span>repousser les limites</span></div>
+							<div class="d-flex align-items-start">
+								<i class="fa fa-solid fa-check" style="margin-right: 12px; color: #e2c877; font-size: 27px"></i>
+								<span>créer un avenir où le succès n'est pas réservé à ceux qui ont eu un départ facile, mais à ceux qui se battent comme des lions pour accomplir leurs rêves.</span></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+			<div class="calibre">
+				<div class="zone-text">
+					<h1 class="title-2 text-gradiant-hello-gold-light">TOUT COMMENCE ICI</h1>
+
+					<h4 class="title-3 text-gradiant-white-black" style="font-family: gilroyextrabold">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</h4>
+				</div>
+
+				<div class="text-center" style="margin-top: 44px;">
+					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+				</div>
+
+				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center" style="margin-top: 27px;">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section section-equipe">
+			<div class="calibre">
+				<h2 class="text-center ttl">ILS VONT TE PARTAGER LEURS <u class="color">MEILLEURES PÉPITES !</u></h2>
+
+				<div class="equipe-container">
+					<div class="equipe-list">
+						<div class="equipe-item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ANTHONY BOURBON</h2>
+							<div class="img-wrapper">
+								<img src="assets/img/ANTONY BOURBON.png" width="300px">
+							</div>
+							<div class="equipe-item-description-container">
+								<h2 class="title-nom">ANTHONY BOURBON</h2>
+								<p class="text-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="equipe-list">
+						<div class="equipe-item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ÉRIC LARCHEVÈQUE</h2>
+							<div class="img-wrapper">
+								<img src="assets/img/ERIC LARCHEVEC.png" width="300px">
+							</div>
+							<div class="equipe-item-description-container">
+								<h2 class="title-nom">ÉRIC LARCHEVÈQUE</h2>
+								<p class="text-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="equipe-list">
+						<div class="equipe-item d-flex align-items-center">
+							<h2 class="equipe-item-nom">DOMINIQUE BOUSSO</h2>
+							<div class="img-wrapper">
+								<img src="assets/img/DOMINIQUE BUSSO.png">
+							</div>
+							<div class="equipe-item-description-container">
+								<h2 class="title-nom">DOMINIQUE BOUSSO</h2>
+								<p class="text-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="equipe-list">
+						<div class="equipe-item d-flex align-items-center">
+							<h2 class="equipe-item-nom">KERRY JAMES</h2>
+							<div class="img-wrapper">
+								<img src="assets/img/KERRY JAMES.png">
+							</div>
+							<div class="equipe-item-description-container">
+								<h2 class="title-nom">KERRY JAMES</h2>
+								<p class="text-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="page-section bg-commun text-center" style="margin: 78px 0 0;">
+			<div class="calibre">
+				<div class="zone-text">
+					<h1 class="title-2 text-gradiant-hello-gold-light">TOUT COMMENCE ICI</h1>
+
+					<h4 class="title-3 text-gradiant-white-black" style="font-family: gilroyextrabold">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</h4>
+				</div>
+
+				<div class="text-center" style="margin-top: 44px;">
+					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+				</div>
+
+				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center" style="margin-top: 27px;">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section section-deroulement" style="padding-top: 7em;">
+			<div class="overlay" style="background-color: rgb(255 255 255 / 50%);"></div>
+			<div class="calibre">
+				<h2 class="text-center ttl">CHANGER VOTRE DESTIN EN  <u class="color">1 JOURNÉE</u> LE PROGRAMME DE LA JOURNÉE</h2>
+				<div class="deroulement-container">
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 1</h2>
+							<div class="description-container">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 1</div>
+									</div>
+
+									<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is that it has a more-or-less normal distribution of letters
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 2</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy3.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 2</div>
+									</div>
+
+									<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is that it has a more-or-less normal distribution of letters
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 3</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy4.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 3</div>
+									</div>
+									<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is that it has a more-or-less normal distribution of letters
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 4</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy5.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 4</div>
+									</div>
+									<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is that it has a more-or-less normal distribution of letters
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section map-section">
+			<div class="calibre">
+				
+				<div class="d-flex align-items-stretch">
+					<div class="map-container">
+						<div class="map-description d-flex align-items-center justify-content-center" style="position: relative;">
+						<div class="overlay"></div>
+							<div style="position: relative;">
+								<div class="map-description-container">
+									<div class="map-description-content text-center">
+										<img src="assets/img/map-anime.gif" style="width: 84px">
+
+										<h3 class="text-color" style="color: #b3842c;margin: 19px 0;font-family: 'gilroyextrabold';">Lieu</h3>
+										<div style="margin-top: 23px;">
+											Université de Metz Paul Verlaine - UFR Sciences Fondamentales Bridoux, Rue du Général Delestraint, Metz, France
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2611.434339984743!2d6.211703575684582!3d49.116385671368306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794ddd541fdfaf7%3A0xa64730706a356c5d!2sUFR%20Sciences%20fondamentales%20et%20appliqu%C3%A9es%20de%20l&#39;Universit%C3%A9%20de%20Lorraine!5e0!3m2!1sfr!2sfr!4v1686215176448!5m2!1sfr!2sfr" width="776" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section">
+			<div class="calibre" style="max-width: 1077px; padding: 0px 17px;">
+				<div class="cart">
+					<div class="cart-list d-flex align-items-stretch">
+						<div class="cart-item">
+							
+							<div class="cart-item-container">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<div class="cart-item-content">
+										
+										<div class="text-gradiant-gold map-pointer text-center" style="margin-top: 31px;">
+											<i class="fa-solid fa-clock" style="font-size: 3.5em;"></i>
+										</div>
+										<div class="text-gradiant-gold ttle">HORAIRE</div>
+
+										<div class="list-horaire">
+											<div class="horaire-item">
+												<i class="fa fa-check"></i>
+												<span>Jeu. 20 juillet 2023 | 10h - 00h</span>
+											</div>
+											<div class="horaire-item">
+												<i class="fa fa-check"></i>
+												<span>Jeu. 20 juillet 2023 | 10h - 00h</span>
+											</div>
+											<div class="horaire-item">
+												<i class="fa fa-check"></i>
+												<span>Jeu. 20 juillet 2023 | 10h - 00h</span>
+											</div>
+											<div class="horaire-item">
+												<i class="fa fa-check"></i>
+												<span>Jeu. 20 juillet 2023 | 10h - 00h</span>
+											</div>
+
+										</div>
+
+										<p class="desc">
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class="cart-item">
+							
+							<div class="cart-item-container">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<div class="cart-item-content">
+										
+										<div class="text-gradiant-gold map-pointer text-center">
+											<img src="assets/img/map-anime.gif" style="width: 84px">
+										</div>
+										<div class="text-gradiant-gold ttle">SE RENDRE SUR PLACE</div>
+
+										<p class="desc" style="font-size: 18px;">
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+
+										<p class="desc" style="font-size: 18px;">
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cart-item">
+							
+							<div class="cart-item-container">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<div class="cart-item-content">
+										
+										<div class="text-gradiant-gold map-pointer text-center" style="margin-top: 31px;">
+											<i class="fas fa-hotel" style="font-size: 3.5em;"></i></div>
+										<div class="text-gradiant-gold ttle">RÉSERVATION D'HÔTEL</div>
+
+										<p class="desc" style="font-size: 18px;">
+											Il y a plusieurs hôtel à distance de marche du site. <a href="javascript:void()" class="text-color">Cliquez ici</a> pour consulter les options d'hébergement disponibles.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+			<div class="calibre">
+				<div class="zone-text">
+					<h1 class="title-2 text-gradiant-hello-gold-light">TOUT COMMENCE ICI</h1>
+
+					<h4 class="title-3 text-gradiant-white-black" style="font-family: gilroyextrabold">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</h4>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="page-section offre-page">
+			<div class="">
+				<h1 class="title-1">RÉSERVEZ VOTRE PASS MAINTENANT </h1>
+
+				<div class="calibre" style="max-width: 1420px;padding: 0px 17px;">
+					<div class="offre-cart">
+						<div class="offre-list d-flex align-items-start">
+							<div class="offre-item" style="margin-top: 55px;">
+								<div class="offre-item-container">
+									<h1 class="title-1">PASS CLASSIC</h1>
+
+									<div class="dashed dashed-top"></div>
+
+									<div class="offre-option-container">
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Assistez à la journée entrepreneuriale la plus puissante de France; <b>Business Day</b> </span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Découvrez les stands du <b>Marché des Entrepreneurs*</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Venez en prendre plein les yeux et les oreilles en assistant aux conférences magiques <b>Business Day</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Accédez au groupe Privé Facebook <b>Business Day</b></span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Découvrez, rencontrez, réseautez avec l’ensemble des participants et donnez-vous la chance de serrer une poignée de main qui va peut-être bouleverser votre avenir professionnel</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>Tous les accès du PASS CLASSIQUE</del>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>Bénéficiez d’un coaching personnalisé d’une heure avec <b>Jérémy Djeffal</b> pour développer votre activité, accéder à des financements, être mis(e) en relation avec des personnalités importantes ou tout autre élément aussi intéressant qu’inattendu qui peuvent résulter d’un échange exceptionnel.</del>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Accès au replay des conférences vidéo + mp3</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Rejoignez notre communauté du <b>Phénix Business Club**</b></del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Participez à notre <b>tirage au sort***</b> pour tenter de gagner la montre emblématique du film <b>Le Loup de Wall Street</b> (Modèle Tag Heuer Gold authentique de 1985)</del>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Bénéficiez de 20 % de remise sur notre prochain événement</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Tous les accès du PASS PREMIUM</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Placement en premières lignes face à la scène au sein de notre carré de V.I.P</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Réunion privée de quelques minutes en salle V.I.P avec <b>Jérémy Djeffal, Dominique Busso, Eric Larchevèque</b> et <b>Anthony Bourbon</b> après chaque intervention</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Repas de midi sur place offert avec l’ensemble du carré V.I.P</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Le livre « <b>Lève-toi et marche</b> » dédicacé par <b>Jérémy Djeffal</b></del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Une invitation à un déjeuner après l’évènement dans l’un dans des meilleurs restaurants de la région avec <b>Jérémy Djeffal</b></del>
+										</div>
+									</div>
+
+									<div class="dashed"></div>
+
+									<div class="offre-footer">
+										<h1 class="ticket-montant">179€</h1>
+
+										<!-- <div style="font-size: 24px;">au lieu de <del>179€</del></div> -->
+
+										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
+											<span class="img-content-ticket">
+												<img src="assets/img/tickets.png" width="30px;">
+											</span>
+											<div class="text-center" style="flex: 1;">
+												<div style="font-family: 'gilroyextrabold';font-size: 19px;">JE RÉSERVE MON PASS CLASSIC</div>
+												<div>(PLACES LIMITÉES)</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="offre-item">
+								<div class="offre-item-container" style="background: linear-gradient(to bottom, #916225, #916225, #b3842c, #e2c877);">
+									<h1 class="title-1">PASS V.I.P</h1>
+
+									<div class="dashed dashed-top"></div>
+
+									<div class="offre-option-container">
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Assistez à la journée entrepreneuriale la plus puissante de France; <b>Business Day</b> </span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Découvrez les stands du <b>Marché des Entrepreneurs*</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Venez en prendre plein les yeux et les oreilles en assistant aux conférences magiques <b>Business Day</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Accédez au groupe Privé Facebook <b>Business Day</b></span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Découvrez, rencontrez, réseautez avec l’ensemble des participants et donnez-vous la chance de serrer une poignée de main qui va peut-être bouleverser votre avenir professionnel</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Tous les accès du PASS CLASSIQUE</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Bénéficiez d’un coaching personnalisé d’une heure avec <b>Jérémy Djeffal</b> pour développer votre activité, accéder à des financements, être mis(e) en relation avec des personnalités importantes ou tout autre élément aussi intéressant qu’inattendu qui peuvent résulter d’un échange exceptionnel.</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Accès au replay des conférences vidéo + mp3</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Rejoignez notre communauté du <b>Phénix Business Club**</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Participez à notre <b>tirage au sort***</b> pour tenter de gagner la montre emblématique du film <b>Le Loup de Wall Street</b> (Modèle Tag Heuer Gold authentique de 1985)</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Bénéficiez de 20 % de remise sur notre prochain événement</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Tous les accès du PASS PREMIUM</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Placement en premières lignes face à la scène au sein de notre carré de V.I.P</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Réunion privée de quelques minutes en salle V.I.P avec <b>Jérémy Djeffal, Dominique Busso, Eric Larchevèque</b> et <b>Anthony Bourbon</b> après chaque intervention</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Repas de midi sur place offert avec l’ensemble du carré V.I.P</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Le livre « <b>Lève-toi et marche</b> » dédicacé par <b>Jérémy Djeffal</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Une invitation à un déjeuner après l’évènement dans l’un dans des meilleurs restaurants de la région avec <b>Jérémy Djeffal</b></span>
+										</div>
+									</div>
+
+									<div class="dashed"></div>
+
+									<div class="offre-footer">
+										<h1 class="ticket-montant">1599€</h1>
+
+										<!-- <div style="font-size: 24px;">au lieu de <del>1599€</del></div> -->
+
+										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
+											<span class="img-content-ticket">
+												<img src="assets/img/tickets.png" width="30px;">
+											</span>
+											<div class="text-center" style="flex: 1;">
+												<div style="font-family: 'gilroyextrabold';font-size: 19px;">JE RÉSERVE MON PASS V.I.P</div>
+												<div>(PLACES LIMITÉES)</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="offre-item" style="margin-top: 55px;">
+								<div class="offre-item-container">
+									<h1 class="title-1">PASS PREMIUM</h1>
+
+									<div class="dashed dashed-top"></div>
+
+									<div class="offre-option-container">
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Assistez à la journée entrepreneuriale la plus puissante de France; <b>Business Day</b> </span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Découvrez les stands du <b>Marché des Entrepreneurs*</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Venez en prendre plein les yeux et les oreilles en assistant aux conférences magiques <b>Business Day</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Accédez au groupe Privé Facebook <b>Business Day</b></span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Découvrez, rencontrez, réseautez avec l’ensemble des participants et donnez-vous la chance de serrer une poignée de main qui va peut-être bouleverser votre avenir professionnel</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Tous les accès du PASS CLASSIQUE</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Bénéficiez d’un coaching personnalisé d’une heure avec <b>Jérémy Djeffal</b> pour développer votre activité, accéder à des financements, être mis(e) en relation avec des personnalités importantes ou tout autre élément aussi intéressant qu’inattendu qui peuvent résulter d’un échange exceptionnel.</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Accès au replay des conférences vidéo + mp3</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Rejoignez notre communauté du <b>Phénix Business Club**</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Participez à notre <b>tirage au sort***</b> pour tenter de gagner la montre emblématique du film <b>Le Loup de Wall Street</b> (Modèle Tag Heuer Gold authentique de 1985)</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Bénéficiez de 20 % de remise sur notre prochain événement</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Tous les accès du PASS PREMIUM</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Placement en premières lignes face à la scène au sein de notre carré de V.I.P</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Réunion privée de quelques minutes en salle V.I.P avec <b>Jérémy Djeffal, Dominique Busso, Eric Larchevèque</b> et <b>Anthony Bourbon</b> après chaque intervention</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Repas de midi sur place offert avec l’ensemble du carré V.I.P</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Le livre « <b>Lève-toi et marche</b> » dédicacé par <b>Jérémy Djeffal</b></del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Une invitation à un déjeuner après l’évènement dans l’un dans des meilleurs restaurants de la région avec <b>Jérémy Djeffal</b></del>
+										</div>
+									</div>
+
+									<div class="dashed"></div>
+
+									<div class="offre-footer">
+										<h1 class="ticket-montant">349€</h1>
+
+										<!-- <div style="font-size: 24px;">au lieu de <del>349€</del></div> -->
+
+										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
+											<span class="img-content-ticket">
+												<img src="assets/img/tickets.png" width="30px;">
+											</span>
+											<div class="text-center" style="flex: 1;">
+												<div style="font-family: 'gilroyextrabold';font-size: 19px;">JE RÉSERVE MON PASS PREMIUM</div>
+												<div>(PLACES LIMITÉES)</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+
+		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+			<div class="calibre">
+				<div class="text-center" style="margin-top: 44px;">
+					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+				</div>
+
+				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center" style="margin-top: 27px;">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section suis-je">
+			<div class="container-content">
+				<div class="d-flex align-items-stretch justify-content-center">
+					
+					<div class="description">
+						<div class="nom"><u class="color">JÉRÉMY DJÉFAL</u></div>
+						<div class="text-box">
+							<p class="mt2">
+								Je suis JÉRÉMY DJÉFAL, fondatrice et dirigeante de Phoenix Conseil & Formation et ancienne directrice d’agence bancaire ou encore de consultante en cabinet d’expertise comptable.</p>
+
+							<p class="mt2">
+								Grâce à mes 15 ans d’expérience dans l’accompagnement des chefs d’entreprise, j’ai acquis des connaissances et des méthodes éprouvées et que je mets à disposition des entrepreneurs, start-uppeurs et créateurs d’entreprise.
+							</p>
+
+							<p class="mt2">
+								À travers Phoenix Conseil & Formation nous avons pour ambition de transmettre aux entrepreneurs des méthodes et stratégies afin de concilier dans un premier temps performance économique puis à leur entreprise d'avoir un impact social et environnemental.
+							</p>
+
+							<p class="mt2">
+								Les entreprises qui passeront la crise et auront une croissance durable sont celles qui inscriront les enjeux environnementaux et sociaux dans leur stratégie de développement.
+							</p>
+
+						</div>
+					</div>
+					<div class="img-container">
+						<img class="img-jeremy" src="assets/img/jeremy4-min.png" width="400px;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+			<div class="calibre">
+				<div class="zone-text">
+					<h1 class="title-2 text-gradiant-hello-gold-light">TOUT COMMENCE ICI</h1>
+
+					<h4 class="title-3 text-gradiant-white-black" style="font-family: gilroyextrabold">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</h4>
+				</div>
+
+				<div class="text-center" style="margin-top: 44px;">
+					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+				</div>
+
+				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center" style="margin-top: 27px;">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section soire-section" style="position: relative;padding: 0">
+			<div class="overlay"></div>
+			<img src="assets/img/4.png" style="width: 100%">
+			<h1 class="text-soire">UNE SOIRÉE DE GALLA INNOUBLIABLE</h1>
+		</div>
+
+		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+			<div class="calibre">
+				<div class="text-center" style="margin-top: 44px;">
+					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+				</div>
+
+				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center" style="margin-top: 27px;">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="page-section map-section">
+			<div class="calibre">
+				
+				<div class="d-flex align-items-stretch">
+					<div class="map-container">
+						<div class="map-description d-flex align-items-center justify-content-center" style="position: relative;">
+						<div class="overlay"></div>
+							<div style="position: relative;">
+								<div class="map-description-container">
+									<div class="map-description-content text-center">
+										<img src="assets/img/map-anime.gif" style="width: 84px">
+
+										<h3 class="text-color" style="color: #b3842c;margin: 19px 0;font-family: 'gilroyextrabold';">Lieu</h3>
+										<div style="margin-top: 23px;">
+											Université de Metz Paul Verlaine - UFR Sciences Fondamentales Bridoux, Rue du Général Delestraint, Metz, France
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2611.434339984743!2d6.211703575684582!3d49.116385671368306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794ddd541fdfaf7%3A0xa64730706a356c5d!2sUFR%20Sciences%20fondamentales%20et%20appliqu%C3%A9es%20de%20l&#39;Universit%C3%A9%20de%20Lorraine!5e0!3m2!1sfr!2sfr!4v1686215176448!5m2!1sfr!2sfr" width="776" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
