@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="assets/img/icon.jpg" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -8,6 +11,11 @@
 	</title>
 
 	<style type="text/css">
+
+		:root {
+		  --accent-color: #b3842c;
+		}
+
 
 		::-webkit-scrollbar {
 		  width: 15px;
@@ -38,7 +46,8 @@
 		.mt2 {margin-top: 2em;}
 		.mb2 {margin-bottom: 2em;}
 		.mb10{padding-bottom: 10em;}
-		.mt10{padding-top: 10em;}
+		.pt10{padding-top: 10em;}
+		.pb10{padding-bottom: 10em;}
 		.mt5{padding-top: 5em;}
 		.mb5{padding-bottom: 5em;}
 		.mb3{padding-bottom: 3em;}
@@ -49,11 +58,7 @@
 		body {
 			font-family: 'helveticaregular';
         }
-        
-        .page-section{
-        	padding-top: 3em;
-        	padding-bottom: 5em;
-        }
+       
         .calibre{
         	display: block;
         	margin-left: auto;
@@ -64,7 +69,6 @@
         	width: 100%;
 		    max-width: 1170px;
 		    margin: auto;
-		    margin-top: 3em;
         }
         .menu-list {
 		    padding: 2px 22px;
@@ -88,18 +92,14 @@
 			font-family: 'gilroyextrabold';
 		}
 
-		.header-section-page{
-			min-height: 100vh;
-		}
-		.navbar img.logo{
+		.navbar img.logo, .footer-img img.logo{
 			max-width: 205px;
 		}
-        .header-section-page{
-        	background-image: url('assets/img/5.png');
-        	background-size: cover!important;
-		    -webkit-background-size: cover!important;
+		.bg{
+			/*background-size: cover!important;
+		    -webkit-background-size: cover!important;*/
 		    background-repeat: no-repeat !important;
-        }
+		}
         .header-section-page .zone-text{
         	text-align: center;
         }
@@ -114,6 +114,13 @@
         	background: linear-gradient(to bottom, #b3842c, #916225, #f9f1b6, #f9f1b6);
 		  -webkit-background-clip: text;
 		  -webkit-text-fill-color: transparent;
+        }
+        .text-gradiant-hello-gold-right{
+        	font-family: 'gilroyextrabold';
+		    background: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    font-size: 59px;
         }
         .text-gradiant-hello-gold-light{
         	font-family: 'gilroyextrabold';
@@ -142,23 +149,21 @@
         	margin-top: 28px
         }
 
-        .video-wrapper{
-        	margin-top: 50px;
-        }
         .video-content iframe.video{
         	border-width: 5px;
 	      border-image: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6) 1;
 	      border-style: solid;
 	      border-radius: 8px;
-	      margin-bottom: 25px;
         }
 
         .section-img-jeremy-1{
-		    padding-top: 5em;
 		    position: relative;
-		    padding-bottom: 3em;
+		    background-image: url(assets/img/205.jpg); 
+		    background-size: cover;
+		    background-position: center;
+
         }
-        .section-img-jeremy-1::before, .section-deroulement::before {
+        .section-deroulement::before {
         	content: "";
 			position: absolute;
 			top: 0;
@@ -167,7 +172,7 @@
 			height: 100%;
 			content: "";
 			position: absolute;
-			background-image: url('assets/img/2.png');
+			background-image: url('assets/img/2.jpg');
 				background-size: cover!important;
 			    -webkit-background-size: cover!important;
 			    background-repeat: no-repeat !important;
@@ -233,14 +238,7 @@
     		border-radius: 25px;
     		box-shadow: 0px 10px 20px 0px rgb(23 23 23 / 60%) !important;
         }
-        .bg-commun{
-        	background: #000;
-		    color: #fff;
-		    background-image: url(assets/img/10-satin.jpg);
-		    background-size: cover !important;
-		    -webkit-background-size: cover !important;
-		    background-repeat: no-repeat !important;
-        }
+        
         .sponsor-container{
         	overflow-x: auto;
 		    padding-bottom: 12px;
@@ -251,6 +249,10 @@
     		margin-right: 30px;
         }
 
+
+        .page-section-Jdedie{
+        	padding: 0 15px;
+        }
         .page-section-Jdedie .title-1{
         	text-align: center;
 		    font-family: 'gilroyextrabold';
@@ -260,7 +262,6 @@
         }
 
         
-        .page-section-Jdedie-container{margin-top: 34px}
         .page-section-Jdedie-container >*{flex: 1;}
         .page-section-Jdedie-container .description-content{
         	max-width: 373px;
@@ -275,6 +276,7 @@
         .page-section-Jdedie-container .img-wrapper{
         	position: relative;
         	overflow-y: hidden;
+        	overflow: hidden;
         }
         .page-section-Jdedie-container .img-wrapper > img{
         	position: absolute;
@@ -302,11 +304,6 @@
         }
 
         .section-equipe{
-        	background-image: url('assets/img/11.png');
-        	background-size: cover!important;
-		    -webkit-background-size: cover!important;
-		    background-repeat: no-repeat !important;
-		    margin-top: 160px;
         }
         .section-equipe .ttl{
         	color: #fff;
@@ -370,14 +367,14 @@
         	margin-top: 25px;
         }
         .section-equipe .equipe-list:nth-child(odd) .equipe-item-nom{
-        	background: linear-gradient(to left, #fff, #8f8f8f);
+        	background: linear-gradient(to left, #fff, #1a1919);
 		    -webkit-background-clip: text;
 		    -webkit-text-fill-color: transparent;
 		    margin-right: -3px;
 		    transform: rotate(180deg);
         }
         .section-equipe .equipe-list:nth-child(even) .equipe-item-nom{
-        	background: linear-gradient(to right, #fff, #8f8f8f);
+        	background: linear-gradient(to right, #fff, #1a1919);
         	-webkit-background-clip: text;
 		    -webkit-text-fill-color: transparent;
 		    margin-left: -3px;
@@ -548,9 +545,9 @@
         .offre-page .title-1 {
         	text-align: center;
 		    font-family: 'gilroyextrabold';
-		    max-width: 915px;
 		    margin: auto;
 		    color: #b3842c;
+		    font-size: 42px;
         }
         .offre-item{
         	width: 480px;
@@ -571,7 +568,6 @@
         }
 
         .offre-cart{
-        	margin-top: 62px;
         }
 
         .offre-option-container{
@@ -686,36 +682,322 @@
 		    z-index: 0;
 		    border-radius: 15px;
 		}
+
+		.header-section-page{
+			background-image: url(assets/img/205.jpg);
+		    background-size: cover;
+  			background-position: center;
+		}
+		.bg-commun{padding: 0px 22px}
+		footer{
+			padding: 126px 15px;
+			background-image: url(assets/img/10-satin.jpg);
+		    background-size: cover !important;
+		    -webkit-background-size: cover !important;
+		    background-repeat: no-repeat !important;
+		}
+		footer .description-container{
+			max-width: 1000px;
+		    margin: auto;
+		    color: #fff;
+		}
+		footer .description-container >*{
+			flex: 1;
+		}
+		footer .description-content{
+			flex: 2;
+		    padding-left: 57px;
+		    font-size: 17px;
+		}
+		footer .copyright{
+			font-family: 'gilroyextrabold';color: #e2c877;
+		}
+
+		footer .separate{background: #e2c877}
+
+		.video-content iframe.video{
+			max-width: 100%;
+		}
+		.navbar-responsive{display: none;}
+
+		.page-section.section-equipe{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		@media(max-width: 992px){
+			.offre-list{flex-wrap: wrap;}
+			.fleche-stape{display: none;}
+			.suis-je .img-container{
+				position: absolute;
+				width: auto;
+				height: 100%;
+			}
+			.suis-je .img-container > img.img-jeremy{
+				filter: grayscale(100%);
+				position: relative;
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+			}
+			.suis-je .description{z-index: 1}
+			.equipe-item{
+				padding: 0 21px;
+			}
+			.section-equipe .equipe-list:nth-child(odd) .equipe-item-description-container{
+				transform: scale(1) translate(0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+			}
+			.section-equipe .equipe-list:nth-child(even) .equipe-item-description-container{
+				transform: scale(1) translate(0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+			}
+			.section-deroulement{padding: 0 28px}
+			.picto-deroulement-container{display: none!important}
+		}
+
+		@media(max-width: 780px){
+			footer{padding: 55px 25px}
+			.footer-img{margin-bottom: 60px}
+			footer .description-container{flex-direction: column;}
+			.map-container{
+				width: 100%;
+    			margin-bottom: 24px;
+			}
+			
+			.page-section-Jdedie-container .description-wrapper{
+				padding: 32px 29px;
+			}
+			.navbar-responsive{display: block;}
+			.navbar-principal{display: none;}
+			.header-section-page{
+				padding-top: 1.5rem!important;
+			}
+			.equipe-item-nom{display: none;}
+		}
+		@media(min-width: 768px) and (max-width: 992px){
+			
+		}
+
+		@media(max-width: 768px){
+			.navbar-responsive .menu-list{
+				padding: 2px 7px;
+			    font-size: 12px;
+			    font-family: 'gilroyextrabold';
+			}
+			.page-section-Jdedie-container .img-wrapper{display: none;}
+			.bg-commun .title-2{font-size: 39px;}
+			.equipe-item{flex-wrap: wrap;}
+			.equipe-list .img-wrapper{
+				margin-bottom: -18px;
+    			z-index: 1;
+			}
+			.equipe-item .img-wrapper img{max-height: 100%;}
+			.calibre-container{flex-wrap: wrap;}
+			.soire-section .text-soire{font-size: 42px;}
+			.header-section-page .title-1{
+				padding: 4px 13px;
+    			font-size: 2.2rem;
+    			line-height: 34px;
+			}
+			/*.header-section-page .title-3{
+				padding: 0px 19px;
+				background: linear-gradient(to bottom, #343333, #343333);
+			    -webkit-background-clip: text;
+			    -webkit-text-fill-color: transparent;
+			}*/
+			.equipe-item-description-container{padding: 30px 24px 8px}
+			.equipe-item-description-container .title-nom{font-size: 25px}
+			.section-deroulement .description-container{
+				padding: 6px 27px 25px;
+				background-position-x: 27%;
+			}
+
+			.navbar-responsive img.logo{max-width: 320px;}
+		}
+
+		/* FAQ STYLE */
+
+			.faq-container {
+			  max-width: 600px;
+			  margin: 0 auto;
+			  border-radius: 10px;
+			  background-color: #fff;
+			  overflow: hidden;
+			  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+			}
+
+			.faq {
+			  box-sizing: border-box;
+			  background: transparent;
+			  padding: 30px;
+			  position: relative;
+			  overflow: hidden;
+			}
+
+			.faq .faq-title{
+				font-family: 'gilroyextrabold';
+			}
+			.faq:not(:first-child) {
+			  border-top: 1px solid #e6e6e6;
+			}
+
+			.faq-title {
+			  margin: 0 35px 0 0;
+			}
+
+			.faq-text {
+			  margin: 30px 0 0;
+			  display: none;
+			  line-height: 1.5rem;
+			}
+
+			.faq.active {
+			  background-color: #f8f8f8;
+			  box-shadow: inset 4px 0px 0px 0px var(--accent-color);
+			}
+
+			.faq.active .faq-title {
+			  color: var(--accent-color);
+			}
+
+			.faq.active .faq-text {
+			  display: block;
+			}
+
+			.faq-toggle {
+			  background-color: transparent;
+			  border: 1px solid #e6e6e6;
+			  color: inherit;
+			  border-radius: 50%;
+			  cursor: pointer;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  font-size: 16px;
+			  padding-top: 3px;
+			  position: absolute;
+			  top: 30px;
+			  right: 30px;
+			  height: 30px;
+			  width: 30px;
+			  transition: 0.3s ease;
+			}
+
+			.faq-toggle:focus {
+			  outline: none;
+			}
+
+			.faq.active .faq-toggle {
+			  transform: rotate(180deg);
+			  background-color: var(--accent-color);
+			  border-color: var(--accent-color);
+			  color: #fff;
+			}
+			.faq-container{
+				max-width:1000px;
+			}
+			/* END FAQ */
+
+		.animated-transition-vertical {
+		position: relative;
+		  animation: move-fade-animation 4s linear infinite;
+		}
+
+		.img-deroulement{
+			position: relative!important;
+		    height: 100%;
+		    object-fit: cover;
+		}
+		.drl-wrapper{
+			background: linear-gradient(to right, #17171799, #1717176e, #17171757, #17171730) !important;
+		}
+		@keyframes move-fade-animation {
+		  0% { top: 0; opacity: 1; }
+		  25% { top: -30px; opacity: 0.5; }
+		  75% { top: -30px; opacity: 0.5; }
+		  100% { top: 0; opacity: 1; }
+		}
+
+		.animated-zoom-in {
+		  animation: zoom-fade-animation-in 8s ease-in-out infinite;
+		}
+
+		@keyframes zoom-fade-animation-in {
+		  0% { transform: scale(1); opacity: 1; }
+		  25% { transform: scale(1.05); opacity: 1; filter: grayscale(100%)}
+		}
+
+		.animated-zoom-out {
+		  animation: zoom-fade-animation-out 8s ease-in-out infinite;
+		}
+
+		@keyframes zoom-fade-animation-out {
+		  0% { transform: scale(1); opacity: 1; }
+		  25% { transform: scale(.80); opacity: 1; }
+		}
+
+
+		.animated-fire {
+		  animation: fire-animation 4s linear infinite;
+		  background: linear-gradient(to right, #b3842c, #916225, #e2c877, #f9f1b6, #f9f1b6);
+		  background-size: 200% 100%;
+		  background-position: -100% 0;
+		  color: transparent;
+		  -webkit-background-clip: text;
+		  background-clip: text;
+		}
+
+		@keyframes fire-animation {
+			0% { background-position: -100% 0; }
+		  	50% { background-position: 100% 0; }  
+		  	100% { background-position: 200% 0; }  
+		}
+
+
 	</style>
 </head>
 <body>
 
 	<main>
 
-		<div class="page-section header-section-page">
+		<div class="page-section header-section-page pt-5">
 			
 			<!--- début topbar -->
-			<div class="navbar">
+			<div class="navbar navbar-principal">
 				<div class="navbar-content d-flex justify-content-between align-item-center">
 					<div class="img-container">
-						<img src="assets/img/logo goldFichier 3.png" class="logo">
+						<img src="assets/img/logo.png" class="logo">
 					</div>
 					<div class="menu-container d-flex align-items-center">
 						<div class="menu-list">
-							<a href="" class="menu-item">QUI EST JÉRÉMY DJÉFAL ?</a>
+							<a href="javascript:void()" class="menu-item" onclick="scrollToTarget('qui-est-jeremy')">QUI EST JÉRÉMY DJÉFAL ?</a>
 						</div>
 						<div class="menu-list">
-							<a href="" class="menu-item">PROGRAMME DE LA JOURNÉE</a>
+							<a href="javascript:void()" class="menu-item" onclick="scrollToTarget('programme')">PROGRAMME DE LA JOURNÉE</a>
 						</div>
 						<div class="menu-list">
-							<a href="" class="menu-item">F.A.Q</a>
+							<a href="javascript:void()" class="menu-item" onclick="scrollToTarget('faq')">F.A.Q</a>
 						</div>
 					</div>
 					<div class="foat-btn">
-						<span class="btn gradiant-gold btn-lg">RÉSERVER MA PLACE</span>
+						<span class="btn gradiant-gold btn-lg" onclick="scrollToTarget('reservation')">RÉSERVER MA PLACE</span>
 					</div>
 				</div>
 			</div>
+
+
+			<div class="navbar-responsive">
+				<div class="navbar pt-0">
+					<div class="navbar-content d-flex justify-content-between align-items-center" style="flex-direction: column;">
+						<div class="img-container">
+							<img src="assets/img/logo.png" class="logo">
+						</div>
+						<div class="foat-btn mt-3">
+							<span class="btn gradiant-gold btn-sm" onclick="scrollToTarget('reservation')">RÉSERVER MA PLACE</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			<!--- fin topbar -->
 
 			<!--  debut section video -->
@@ -727,13 +1009,13 @@
 					<h4 class="title-3 text-gradiant-white-black">GAGNEZ 10 ANS D’EXPÉRIENCE EN 1 JOURNÉE</h4>
 				</div>
 
-				<div class="video-wrapper text-center">
+				<div class="video-wrapper text-center mt-5">
 					<div class="video-content">
 						<iframe class="video" width="800" height="415" src="https://www.youtube.com/embed/7QtkXrkAj9U" frameborder="0" allowfullscreen></iframe>
 					</div>
 
-					<div class="text-center">
-						<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+					<div class="text-center mt-4">
+						<span class="btn gradiant-gold btn-lg" onclick="scrollToTarget('reservation')">JE RÉSERVE MA PLACE ICI</span>
 					</div>
 				</div>
 			</div>
@@ -741,42 +1023,15 @@
 
 		</div>
 
-		<div class="page-section section-img-jeremy-1">
-			<div class="overlay"></div>
-			<div class="img-jeremy">
-				<img src="assets/img/jeremy2-1.png" width="300px">
-			</div>
-			<div class="description">
-				<p>GAGNEZ 10 ANS D’EXPÉRIENCE EN 1 JOURNÉE GR CE AUX PLUS GRANDS NOMS DE L’ENTREPRENEURIAT FRANCOPHONE</p>
-
-				<div class="sponsor-container">
-					<div class="sponsor-list d-flex align-items-center justify-content-center">
-						<div class="sponsor-item">
-							<img src="assets/img/logo-small-white.png" class="sponsor">
-						</div>
-						<div class="sponsor-item">
-							<img src="assets/img/logo-small-white.png" class="sponsor">
-						</div>
-						<div class="sponsor-item">
-							<img src="assets/img/logo-small-white.png" class="sponsor">
-						</div>
-						<div class="sponsor-item">
-							<img src="assets/img/logo-small-white.png" class="sponsor">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="page-section page-section-Jdedie">
+		<div class="page-section page-section-Jdedie mt-5 pt-5">
 			<div class="calibre">
 				<h2 class="title-1">LA JOURNÉE DÉDIÉE À LA CROISSANCE DES PERSONNES ORDINAIRES QUI VEULENT DES RÉSULTATS EXTRAS-ORDINAIRES</h2>
 
-				<div class="page-section-Jdedie-container d-flex align-items-stretch justify-content-center">
+				<div class="page-section-Jdedie-container d-flex align-items-stretch justify-content-center  mt-5 pt-4">
 					<div class="img-wrapper">
 						<h1 class="vertical-name">JÉRÉMY DJÉFAL</h1>
 						<div class="overlay2"></div>
-						<img src="assets/img/jeremy1.png"> 
+						<img src="assets/img/jeremy1.png" class="animated-zoom-in"> 
 					</div>
 					<div class="description-wrapper">
 						<div class="description-content">
@@ -804,35 +1059,37 @@
 			</div>
 		</div>
 
-		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+		<div class="page-section bg-commun text-center pt-5 mt-5 pb-5 mb-5">
 			<div class="calibre">
 				<div class="zone-text">
-					<h1 class="title-2 text-gradiant-hello-gold-light">TOUT COMMENCE ICI</h1>
+					<h1 class="title-2 text-gradiant-hello-gold-right">TOUT COMMENCE ICI</h1>
 
-					<h4 class="title-3 text-gradiant-white-black" style="font-family: gilroyextrabold">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</h4>
+					<h4 class="title-3" style="font-family: gilroyextrabold; color: #212529db;">
+						<u class="color">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</u>
+					</h4>
 				</div>
 
-				<div class="text-center" style="margin-top: 44px;">
-					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+				<div class="text-center mt-5">
+					<span class="btn gradiant-gold btn-lg" onclick="scrollToTarget('reservation')">JE RÉSERVE MA PLACE ICI</span>
 				</div>
 
-				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
-					<div class="text-center" style="margin-top: 27px;">
-					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				<p style="font-size: 23px" class="mt-4">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold" onclick="scrollToTarget('reservation')">RÉSERVER UN APPEL ICI</span>
 				</div>
 			</div>
 		</div>
 
-		<div class="page-section section-equipe">
+		<div class="page-section section-equipe pt-5">
 			<div class="calibre">
-				<h2 class="text-center ttl">ILS VONT TE PARTAGER LEURS <u class="color">MEILLEURES PÉPITES !</u></h2>
+				<h2 class="text-center ttl text-gradiant-hello-gold-right">ILS VONT TE PARTAGER LEURS <u class="color">MEILLEURES PÉPITES !</u></h2>
 
 				<div class="equipe-container">
 					<div class="equipe-list">
 						<div class="equipe-item d-flex align-items-center">
-							<h2 class="equipe-item-nom">ANTHONY BOURBON</h2>
+							<h2 class="equipe-item-nom animated-transition-vertical">ANTHONY BOURBON</h2>
 							<div class="img-wrapper">
-								<img src="assets/img/ANTONY BOURBON.png" width="300px">
+								<img class="" src="assets/img/ANTONY BOURBON.png" width="300px">
 							</div>
 							<div class="equipe-item-description-container">
 								<h2 class="title-nom">ANTHONY BOURBON</h2>
@@ -847,7 +1104,7 @@
 					</div>
 					<div class="equipe-list">
 						<div class="equipe-item d-flex align-items-center">
-							<h2 class="equipe-item-nom">ÉRIC LARCHEVÈQUE</h2>
+							<h2 class="equipe-item-nom animated-transition-vertical">ÉRIC LARCHEVÈQUE</h2>
 							<div class="img-wrapper">
 								<img src="assets/img/ERIC LARCHEVEC.png" width="300px">
 							</div>
@@ -865,7 +1122,7 @@
 
 					<div class="equipe-list">
 						<div class="equipe-item d-flex align-items-center">
-							<h2 class="equipe-item-nom">DOMINIQUE BOUSSO</h2>
+							<h2 class="equipe-item-nom animated-transition-vertical">DOMINIQUE BOUSSO</h2>
 							<div class="img-wrapper">
 								<img src="assets/img/DOMINIQUE BUSSO.png">
 							</div>
@@ -883,7 +1140,7 @@
 
 					<div class="equipe-list">
 						<div class="equipe-item d-flex align-items-center">
-							<h2 class="equipe-item-nom">KERRY JAMES</h2>
+							<h2 class="equipe-item-nom animated-transition-vertical">KERRY JAMES</h2>
 							<div class="img-wrapper">
 								<img src="assets/img/KERRY JAMES.png">
 							</div>
@@ -903,29 +1160,94 @@
 		</div>
 
 
-		<div class="page-section bg-commun text-center" style="margin: 78px 0 0;">
+		<div class="page-section bg-commun text-center pt-5 mt-5 pb-5 mb-5">
 			<div class="calibre">
 				<div class="zone-text">
-					<h1 class="title-2 text-gradiant-hello-gold-light">TOUT COMMENCE ICI</h1>
+					<h1 class="title-2 text-gradiant-hello-gold-right">TOUT COMMENCE ICI</h1>
 
-					<h4 class="title-3 text-gradiant-white-black" style="font-family: gilroyextrabold">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</h4>
+					<h4 class="title-3" style="font-family: gilroyextrabold; color: #212529db;">
+						<u class="color">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</u>
+					</h4>
 				</div>
 
-				<div class="text-center" style="margin-top: 44px;">
-					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+				<div class="text-center mt-5">
+					<span class="btn gradiant-gold btn-lg" onclick="scrollToTarget('reservation')">JE RÉSERVE MA PLACE ICI</span>
 				</div>
 
-				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
-					<div class="text-center" style="margin-top: 27px;">
-					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				<p style="font-size: 23px" class="mt-4">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold" onclick="scrollToTarget('reservation')">RÉSERVER UN APPEL ICI</span>
 				</div>
 			</div>
 		</div>
 
-		<div class="page-section section-deroulement" style="padding-top: 7em;">
+
+		<div class="page-section section-equipe pt-5">
+			<div class="calibre">
+				<h2 class="text-center ttl text-gradiant-hello-gold-right">CHANGER VOTRE DESTIN EN  <u class="color">1 JOURNÉE</u>.<br> UNE EXPÉRIENCE À NE PAS MANQUER</h2>
+
+				<div class="equipe-container">
+					<div class="equipe-list">
+						<div class="equipe-item d-flex align-items-center">
+							<div class="img-wrapper drl-wrapper">
+								<img class="img-deroulement" src="assets/img/5216422.jpg" width="300px">
+							</div>
+							<div class="equipe-item-description-container">
+								<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
+								<p class="">Les plus grands entrepreneurs francophones vous racontent leur histoire et vous partageront leurs meilleurs conseils.</p>
+
+								<p>*(il nous faudrait une image de fond qui représente une conférence)*</p>
+							</div>
+						</div>
+					</div>
+					<div class="equipe-list">
+						<div class="equipe-item d-flex align-items-center">
+							<div class="img-wrapper drl-wrapper">
+								<!-- <img class="img-deroulement" src="assets/img/5216422.jpg" width="300px"> -->
+							</div>
+							<div class="equipe-item-description-container">
+								<h2 class="title-nom">LE SALON DE L’ENTREPRENEURIAT</h2>
+								<p class="text-color">Les plus grands entrepreneurs francophones vous racontent leur histoire et vous partagent leurs meilleurs conseils.</p>
+								<p>*(il nous faudrait une image de fond qui représente un salon)*</p>
+							</div>
+						</div>
+					</div>
+					<div class="equipe-list">
+						<div class="equipe-item d-flex align-items-center">
+							<div class="img-wrapper drl-wrapper">
+								<!-- <img class="img-deroulement" src="assets/img/5216422.jpg" width="300px"> -->
+							</div>
+							<div class="equipe-item-description-container">
+								<h2 class="title-nom">CONCOURS DE L’ENTREPRENEURIAT</h2>
+								<p>Pitcher votre<p>
+									<p>*(il nous faudrait une image de fond qui représente un concour ou les personnes pitche sur scène)*</p>
+							</div>
+						</div>
+					</div>
+					<div class="equipe-list">
+						<div class="equipe-item d-flex align-items-center">
+							<div class="img-wrapper drl-wrapper">
+								<img class="img-deroulement" src="assets/img/5216423.jpg" width="300px">
+							</div>
+							<div class="equipe-item-description-container">
+								<h2 class="title-nom">NETWORKING</h2>
+								<p class="">Puisqu’une poignée de main peut être la clef de toutes les portes…</p>
+
+								<p>Nouez des relations avec des milliers d’entrepreneurs et ouvrez-vous à de nouvelles opportunités business.</p>
+
+								<p>*(il nous faudrait une image de fond qui représente un réseau type internet)*</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="page-section section-deroulement pt-5 pb-5" id="programme">
 			<div class="overlay" style="background-color: rgb(255 255 255 / 50%);"></div>
 			<div class="calibre">
-				<h2 class="text-center ttl">CHANGER VOTRE DESTIN EN  <u class="color">1 JOURNÉE</u> LE PROGRAMME DE LA JOURNÉE</h2>
+				<h2 class="text-center ttl pt-4">CHANGER VOTRE DESTIN EN  <u class="color">1 JOURNÉE</u> LE PROGRAMME DE LA JOURNÉE</h2>
 				<div class="deroulement-container">
 					<div class="list mt4">
 						<div class="item d-flex align-items-center">
@@ -941,8 +1263,8 @@
 										<div class="text-stape">ETAPE 1</div>
 									</div>
 
-									<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is that it has a more-or-less normal distribution of letters
+									<h2 class="title-nom">09h00 – 09h50</h2>
+									<p>Accueil de tous les participants, échanges, connaissances, découverte des stands du Marché des Entrepreneurs (une dizaines de stands tenus par des entrepreneurs pour présenter leur projet, leur concept, leur produit).
 									</p>
 								</div>
 							</div>
@@ -954,7 +1276,7 @@
 							<div class="description-container" style="background-image: url(assets/img/jeremy3.png);">
 								<div class="overlay"></div>
 								<div style="position: relative;">
-									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png" style="height: 173px;left: -229px;">
 									<div class="picto-deroulement-container d-flex align-items-end">
 										<span class="picto-deroulement-clock">
 										<img src="assets/img/clock.png" width="50px">
@@ -962,8 +1284,8 @@
 										<div class="text-stape">ETAPE 2</div>
 									</div>
 
-									<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is that it has a more-or-less normal distribution of letters
+									<h2 class="title-nom">09h50 – 10h00</h2>
+									<p>Installation dans l’auditorium
 									</p>
 								</div>
 							</div>
@@ -975,15 +1297,15 @@
 							<div class="description-container" style="background-image: url(assets/img/jeremy4.png);">
 								<div class="overlay"></div>
 								<div style="position: relative;">
-									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png" style="height: 185px; right: -242px;">
 									<div class="picto-deroulement-container d-flex align-items-end">
 										<span class="picto-deroulement-clock">
 										<img src="assets/img/clock.png" width="50px">
 										</span>
 										<div class="text-stape">ETAPE 3</div>
 									</div>
-									<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is that it has a more-or-less normal distribution of letters
+									<h2 class="title-nom">10h00 – 10h30</h2>
+									<p>Intervention de <b>Kerry James</b>. Interprétation, échanges, présentation de l’<b>Association A.C.E.S.</b>
 									</p>
 								</div>
 							</div>
@@ -995,27 +1317,202 @@
 							<div class="description-container" style="background-image: url(assets/img/jeremy5.png);">
 								<div class="overlay"></div>
 								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png" style="height: 185px; left: -242px;">
 									<div class="picto-deroulement-container d-flex align-items-end">
 										<span class="picto-deroulement-clock">
 										<img src="assets/img/clock.png" width="50px">
 										</span>
 										<div class="text-stape">ETAPE 4</div>
 									</div>
-									<h2 class="title-nom">DES CONFÉRENCES D’EXCEPTION</h2>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is that it has a more-or-less normal distribution of letters
+									<h2 class="title-nom">10h30 – 11h30</h2>
+									<p>Intervention de <b>Dominique Busso</b> (Founder CEO de <b>Forbes France</b>) Conférence, questions réponses, échanges
 									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 5</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy3.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 5</div>
+									</div>
+									<h2 class="title-nom">11h30 - 12h00</h2>
+									<p>PASS V.I.P : échange privé en loge avec <b>Dominique Busso</b>. PASS CLASSIQUE et PASS PREMIUM : échanges, connaissances, découverte des stands du <b>Marché des Entrepreneurs.</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 6</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy4.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png" style="height: 186px; left: -243px;">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 6</div>
+									</div>
+									<h2 class="title-nom">12h15 – 13h50</h2>
+									<p>PASS VIP : déjeuner sur place. PASS CLASSIQUE et PASS PREMIUM : quartier libre.</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 7</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy5.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png" style="height: 172px; right: -229px;">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 7</div>
+									</div>
+									<h2 class="title-nom">13h50 – 14h00</h2>
+									<p>Installation dans l’auditorium.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 8</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy3.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 8</div>
+									</div>
+									<h2 class="title-nom">14h00 – 15h00</h2>
+									<p>Intervention de <b>Eric Larchevèque</b> (Cofondateur de <b>Ledger</b> et <b>Algosup</b>, membre du jury et investisseur de l’émission <b>Qui veut être mon associé ?</b>). <br>Conférence, questions réponses, échanges</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 9</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy4.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 9</div>
+									</div>
+									<h2 class="title-nom">15h00 – 15h30</h2>
+									<p>PASS V.I.P : échange privé en loge avec <b>Eric Larchevèque</b>. PASS CLASSIQUE et PASS PREMIUM : échanges, connaissances, découverte des stands du <b>Marché des Entrepreneurs</b>.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 10</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy5.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png" style="height: 186px;left: -243px;">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 10</div>
+									</div>
+									<h2 class="title-nom">15h30 – 16h45</h2>
+									<p>Conférence concours entrepreneurial, présentation du projet gagnant, remise du trophée.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 11</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy3.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png" style="height: 172px;right: -229px;">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 11</div>
+									</div>
+									<h2 class="title-nom">16h45 – 17h00</h2>
+									<p>Pause</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 12</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy4.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<img class="fleche-stape" src="assets/img/fleche-courbe-tamise.png" style="height: 198px;left: -254px;">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 12</div>
+									</div>
+									<h2 class="title-nom">17h00 – 18h00</h2>
+									<p>Intervention de <b>Anthony Bourbon</b> (Founder & CEO de <b>Blast Club</b>, membre du jury et investisseur de l’émission <b>Qui veut être mon associé ?</b>).</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list mt4">
+						<div class="item d-flex align-items-center">
+							<h2 class="equipe-item-nom">ETAPE 13</h2>
+							<div class="description-container" style="background-image: url(assets/img/jeremy5.png);">
+								<div class="overlay"></div>
+								<div style="position: relative;">
+									<div class="picto-deroulement-container d-flex align-items-end">
+										<span class="picto-deroulement-clock">
+										<img src="assets/img/clock.png" width="50px">
+										</span>
+										<div class="text-stape">ETAPE 13</div>
+									</div>
+									<h2 class="title-nom">18h00 – 18h30</h2>
+									<p>PASS VIP échange privé en loge avec <b>Anthony Bourbon</b>. PASS CLASSIQUE et PASS PREMIUM : échanges, connaissances, découverte des stands du <b>Marché des Entrepreneurs</b>. Conclusion, remerciements et clôture de l’évènement.</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="page-section map-section">
+		<div class="page-section map-section mt-5 pt-5">
 			<div class="calibre">
 				
-				<div class="d-flex align-items-stretch">
+				<div class="calibre-container d-flex align-items-stretch">
 					<div class="map-container">
 						<div class="map-description d-flex align-items-center justify-content-center" style="position: relative;">
 						<div class="overlay"></div>
@@ -1038,10 +1535,10 @@
 			</div>
 		</div>
 
-		<div class="page-section">
+		<div class="page-section map-section mt-5 pt-5 mb-5 pb-5">
 			<div class="calibre" style="max-width: 1077px; padding: 0px 17px;">
 				<div class="cart">
-					<div class="cart-list d-flex align-items-stretch">
+					<div class="cart-list d-flex align-items-stretch flex-wrap justify-content-center">
 						<div class="cart-item">
 							
 							<div class="cart-item-container">
@@ -1106,7 +1603,7 @@
 							</div>
 						</div>
 
-						<div class="cart-item">
+						<!-- <div class="cart-item">
 							
 							<div class="cart-item-container">
 								<div class="overlay"></div>
@@ -1123,7 +1620,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 					</div>
 				</div>
@@ -1131,25 +1628,31 @@
 		</div>
 
 
-		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+		<div class="page-section bg-commun text-center pt-5 mt-5 pb-5 mb-5">
 			<div class="calibre">
 				<div class="zone-text">
-					<h1 class="title-2 text-gradiant-hello-gold-light">TOUT COMMENCE ICI</h1>
+					<h1 class="title-2 text-gradiant-hello-gold-right">TOUT COMMENCE ICI</h1>
 
-					<h4 class="title-3 text-gradiant-white-black" style="font-family: gilroyextrabold">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</h4>
+					<h4 class="title-3" style="font-family: gilroyextrabold; color: #212529db;">
+						<u class="color">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</u>
+					</h4>
 				</div>
+
+				<div class="text-center mt-4">
+					<span class="btn gradiant-gold btn-lg" onclick="scrollToTarget('reservation')">JE RÉSERVE MA PLACE ICI</span>
+				</div>
+
 			</div>
 		</div>
 
-
-		<div class="page-section offre-page">
+		<div class="page-section offre-page" id="reservation">
 			<div class="">
-				<h1 class="title-1">RÉSERVEZ VOTRE PASS MAINTENANT </h1>
+				<h1 class="title-1 text-gradiant-hello-gold-right pt-4 mt-5">RÉSERVEZ VOTRE PASS MAINTENANT </h1>
 
 				<div class="calibre" style="max-width: 1420px;padding: 0px 17px;">
-					<div class="offre-cart">
-						<div class="offre-list d-flex align-items-start">
-							<div class="offre-item" style="margin-top: 55px;">
+					<div class="offre-cart mt-5">
+						<div class="offre-list d-flex align-items-start justify-content-center">
+							<div class="offre-item">
 								<div class="offre-item-container">
 									<h1 class="title-1">PASS CLASSIC</h1>
 
@@ -1238,12 +1741,114 @@
 
 										<!-- <div style="font-size: 24px;">au lieu de <del>179€</del></div> -->
 
-										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
+										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()"  onclick="scrollToTarget('reservation')" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
 											<span class="img-content-ticket">
 												<img src="assets/img/tickets.png" width="30px;">
 											</span>
 											<div class="text-center" style="flex: 1;">
 												<div style="font-family: 'gilroyextrabold';font-size: 19px;">JE RÉSERVE MON PASS CLASSIC</div>
+												<div>(PLACES LIMITÉES)</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="offre-item">
+								<div class="offre-item-container">
+									<h1 class="title-1">PASS PREMIUM</h1>
+
+									<div class="dashed dashed-top"></div>
+
+									<div class="offre-option-container">
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Assistez à la journée entrepreneuriale la plus puissante de France; <b>Business Day</b> </span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Découvrez les stands du <b>Marché des Entrepreneurs*</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Venez en prendre plein les yeux et les oreilles en assistant aux conférences magiques <b>Business Day</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Accédez au groupe Privé Facebook <b>Business Day</b></span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Découvrez, rencontrez, réseautez avec l’ensemble des participants et donnez-vous la chance de serrer une poignée de main qui va peut-être bouleverser votre avenir professionnel</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Tous les accès du PASS CLASSIQUE</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>Bénéficiez d’un coaching personnalisé d’une heure avec <b>Jérémy Djeffal</b> pour développer votre activité, accéder à des financements, être mis(e) en relation avec des personnalités importantes ou tout autre élément aussi intéressant qu’inattendu qui peuvent résulter d’un échange exceptionnel.</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Accès au replay des conférences vidéo + mp3</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Rejoignez notre communauté du <b>Phénix Business Club**</b></span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Participez à notre <b>tirage au sort***</b> pour tenter de gagner la montre emblématique du film <b>Le Loup de Wall Street</b> (Modèle Tag Heuer Gold authentique de 1985)</span>
+										</div>
+
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-check-circle gold"></i></span>
+											<span>​Bénéficiez de 20 % de remise sur notre prochain événement</span>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Tous les accès du PASS PREMIUM</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Placement en premières lignes face à la scène au sein de notre carré de V.I.P</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Réunion privée de quelques minutes en salle V.I.P avec <b>Jérémy Djeffal, Dominique Busso, Eric Larchevèque</b> et <b>Anthony Bourbon</b> après chaque intervention</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Repas de midi sur place offert avec l’ensemble du carré V.I.P</del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Le livre « <b>Lève-toi et marche</b> » dédicacé par <b>Jérémy Djeffal</b></del>
+										</div>
+										<div class="offre-option-item d-flex align-items-start">
+											<span><i class="fa fa-times-circle times"></i></span>
+											<del>​Une invitation à un déjeuner après l’évènement dans l’un dans des meilleurs restaurants de la région avec <b>Jérémy Djeffal</b></del>
+										</div>
+									</div>
+
+									<div class="dashed"></div>
+
+									<div class="offre-footer">
+										<h1 class="ticket-montant">349€</h1>
+
+										<!-- <div style="font-size: 24px;">au lieu de <del>349€</del></div> -->
+
+										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()" onclick="scrollToTarget('reservation')" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
+											<span class="img-content-ticket">
+												<img src="assets/img/tickets.png" width="30px;">
+											</span>
+											<div class="text-center" style="flex: 1;">
+												<div style="font-family: 'gilroyextrabold';font-size: 19px;">JE RÉSERVE MON PASS PREMIUM</div>
 												<div>(PLACES LIMITÉES)</div>
 											</div>
 										</a>
@@ -1340,114 +1945,12 @@
 
 										<!-- <div style="font-size: 24px;">au lieu de <del>1599€</del></div> -->
 
-										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
+										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()"  onclick="scrollToTarget('reservation')" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
 											<span class="img-content-ticket">
 												<img src="assets/img/tickets.png" width="30px;">
 											</span>
 											<div class="text-center" style="flex: 1;">
 												<div style="font-family: 'gilroyextrabold';font-size: 19px;">JE RÉSERVE MON PASS V.I.P</div>
-												<div>(PLACES LIMITÉES)</div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="offre-item" style="margin-top: 55px;">
-								<div class="offre-item-container">
-									<h1 class="title-1">PASS PREMIUM</h1>
-
-									<div class="dashed dashed-top"></div>
-
-									<div class="offre-option-container">
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>Assistez à la journée entrepreneuriale la plus puissante de France; <b>Business Day</b> </span>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>Découvrez les stands du <b>Marché des Entrepreneurs*</b></span>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>Venez en prendre plein les yeux et les oreilles en assistant aux conférences magiques <b>Business Day</b></span>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>Accédez au groupe Privé Facebook <b>Business Day</b></span>
-										</div>
-
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>Découvrez, rencontrez, réseautez avec l’ensemble des participants et donnez-vous la chance de serrer une poignée de main qui va peut-être bouleverser votre avenir professionnel</span>
-										</div>
-
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>Tous les accès du PASS CLASSIQUE</span>
-										</div>
-
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>Bénéficiez d’un coaching personnalisé d’une heure avec <b>Jérémy Djeffal</b> pour développer votre activité, accéder à des financements, être mis(e) en relation avec des personnalités importantes ou tout autre élément aussi intéressant qu’inattendu qui peuvent résulter d’un échange exceptionnel.</span>
-										</div>
-
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>​Accès au replay des conférences vidéo + mp3</span>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>​Rejoignez notre communauté du <b>Phénix Business Club**</b></span>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>​Participez à notre <b>tirage au sort***</b> pour tenter de gagner la montre emblématique du film <b>Le Loup de Wall Street</b> (Modèle Tag Heuer Gold authentique de 1985)</span>
-										</div>
-
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-check-circle gold"></i></span>
-											<span>​Bénéficiez de 20 % de remise sur notre prochain événement</span>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-times-circle times"></i></span>
-											<del>​Tous les accès du PASS PREMIUM</del>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-times-circle times"></i></span>
-											<del>​Placement en premières lignes face à la scène au sein de notre carré de V.I.P</del>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-times-circle times"></i></span>
-											<del>​Réunion privée de quelques minutes en salle V.I.P avec <b>Jérémy Djeffal, Dominique Busso, Eric Larchevèque</b> et <b>Anthony Bourbon</b> après chaque intervention</del>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-times-circle times"></i></span>
-											<del>​Repas de midi sur place offert avec l’ensemble du carré V.I.P</del>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-times-circle times"></i></span>
-											<del>​Le livre « <b>Lève-toi et marche</b> » dédicacé par <b>Jérémy Djeffal</b></del>
-										</div>
-										<div class="offre-option-item d-flex align-items-start">
-											<span><i class="fa fa-times-circle times"></i></span>
-											<del>​Une invitation à un déjeuner après l’évènement dans l’un dans des meilleurs restaurants de la région avec <b>Jérémy Djeffal</b></del>
-										</div>
-									</div>
-
-									<div class="dashed"></div>
-
-									<div class="offre-footer">
-										<h1 class="ticket-montant">349€</h1>
-
-										<!-- <div style="font-size: 24px;">au lieu de <del>349€</del></div> -->
-
-										<a class="btn gradiant-gold d-flex align-items-center" href="javascript:void()" style="margin-top: 30px; border-radius: 11px;padding: .9rem .75rem">
-											<span class="img-content-ticket">
-												<img src="assets/img/tickets.png" width="30px;">
-											</span>
-											<div class="text-center" style="flex: 1;">
-												<div style="font-family: 'gilroyextrabold';font-size: 19px;">JE RÉSERVE MON PASS PREMIUM</div>
 												<div>(PLACES LIMITÉES)</div>
 											</div>
 										</a>
@@ -1461,23 +1964,23 @@
 			</div>
 		</div>
 			
-
-		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+		<div class="page-section bg-commun text-center pt-5 mt-5 pb-5 mb-5">
 			<div class="calibre">
-				<div class="text-center" style="margin-top: 44px;">
-					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+
+				<div class="text-center mt-5">
+					<span class="btn gradiant-gold btn-lg" onclick="scrollToTarget('reservation')">JE RÉSERVE MA PLACE ICI</span>
 				</div>
 
-				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
-					<div class="text-center" style="margin-top: 27px;">
-					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				<p style="font-size: 23px" class="mt-4">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold" onclick="scrollToTarget('reservation')">RÉSERVER UN APPEL ICI</span>
 				</div>
 			</div>
 		</div>
 
-		<div class="page-section suis-je">
+		<div class="page-section suis-je pt-5 mt-5" id="qui-est-jeremy">
 			<div class="container-content">
-				<div class="d-flex align-items-stretch justify-content-center">
+				<div class="d-flex align-items-stretch justify-content-center" style="position: relative;">
 					
 					<div class="description">
 						<div class="nom"><u class="color">JÉRÉMY DJÉFAL</u></div>
@@ -1506,40 +2009,43 @@
 			</div>
 		</div>
 
-		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+		<div class="page-section bg-commun text-center pt-5 mt-5 pb-5 mb-5">
 			<div class="calibre">
 				<div class="zone-text">
-					<h1 class="title-2 text-gradiant-hello-gold-light">TOUT COMMENCE ICI</h1>
+					<h1 class="title-2 text-gradiant-hello-gold-right">TOUT COMMENCE ICI</h1>
 
-					<h4 class="title-3 text-gradiant-white-black" style="font-family: gilroyextrabold">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</h4>
+					<h4 class="title-3" style="font-family: gilroyextrabold; color: #212529db;">
+						<u class="color">REJOIGNEZ LE MOUVEMENT ET LAISSEZ-VOUS INSPIRER - 21 OCTOBRE 2021</u>
+					</h4>
 				</div>
 
-				<div class="text-center" style="margin-top: 44px;">
-					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+				<div class="text-center mt-5">
+					<span class="btn gradiant-gold btn-lg" onclick="scrollToTarget('reservation')">JE RÉSERVE MA PLACE ICI</span>
 				</div>
 
-				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
-					<div class="text-center" style="margin-top: 27px;">
-					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				<p style="font-size: 23px" class="mt-4">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold" onclick="scrollToTarget('reservation')">RÉSERVER UN APPEL ICI</span>
 				</div>
 			</div>
 		</div>
 
 		<div class="page-section soire-section" style="position: relative;padding: 0">
 			<div class="overlay"></div>
-			<img src="assets/img/4.png" style="width: 100%">
+			<img src="assets/img/4.jpg" style="width: 100%">
 			<h1 class="text-soire">UNE SOIRÉE DE GALLA INNOUBLIABLE</h1>
 		</div>
 
-		<div class="page-section bg-commun text-center" style="margin: 78px 0;">
+		<div class="page-section bg-commun text-center pt-5 mt-5 pb-5 mb-5">
 			<div class="calibre">
-				<div class="text-center" style="margin-top: 44px;">
-					<span class="btn gradiant-gold btn-lg">JE RÉSERVE MA PLACE ICI</span>
+
+				<div class="text-center mt-5">
+					<span class="btn gradiant-gold btn-lg" onclick="scrollToTarget('reservation')">JE RÉSERVE MA PLACE ICI</span>
 				</div>
 
-				<p style="font-size: 23px;margin-top: 4em;">Des questions ? vous voulez un tarif de groupe ?</p>
-					<div class="text-center" style="margin-top: 27px;">
-					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold">RÉSERVER UN APPEL ICI</span>
+				<p style="font-size: 23px" class="mt-4">Des questions ? vous voulez un tarif de groupe ?</p>
+					<div class="text-center">
+					<span class="btn btn-lg" style="background: #FDB931;font-family: gilroyextrabold" onclick="scrollToTarget('reservation')">RÉSERVER UN APPEL ICI</span>
 				</div>
 			</div>
 		</div>
@@ -1548,7 +2054,7 @@
 		<div class="page-section map-section">
 			<div class="calibre">
 				
-				<div class="d-flex align-items-stretch">
+				<div class="calibre-container d-flex align-items-stretch">
 					<div class="map-container">
 						<div class="map-description d-flex align-items-center justify-content-center" style="position: relative;">
 						<div class="overlay"></div>
@@ -1571,10 +2077,147 @@
 			</div>
 		</div>
 
+		<div class="section-faq pt-5">
+			<h1 class="title-1 text-gradiant-hello-gold-right pt-4 mt-5 text-center" id="faq">FAQ</h1>
+			<div class="faq-container mt-5">
+				<div class="faq active">
+			    <h3 class="faq-title">
+			      out le monde peut-il assister à Business Day ?
+			    </h3>
+			    <div class="faq-text">
+			    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+			    </div>
+			    <button class="faq-toggle">
+			      <i class="fas fa-angle-down"></i>
+			    </button>
+			  	</div>
+
+			  <div class="faq">
+			    <h3 class="faq-title">
+			      Comment arriver au palais des congrès de Metz ?
+			    </h3>
+			    <div class="faq-text">
+			    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+			    </div>
+			    <button class="faq-toggle">
+			      <i class="fas fa-angle-down"></i>
+			    </button>
+			  </div>
+
+			  <div class="faq">
+			    <h3 class="faq-title">
+			      Les repas sont-ils pris en charge ?
+			    </h3>
+			    <div class="faq-text">
+			    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+			    </div>
+			    <button class="faq-toggle">
+			      <i class="fas fa-angle-down"></i>
+			    </button>
+			  </div>
+
+			  <div class="faq">
+			    <h3 class="faq-title">
+			      Je suis en situation de handicap, comment vais-je être accueilli ?
+			    </h3>
+			    <div class="faq-text">
+			    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+			    </div>
+			    <button class="faq-toggle">
+			      <i class="fas fa-angle-down"></i>
+			    </button>
+			  </div>
+
+			  <div class="faq">
+			    <h3 class="faq-title">
+			      Il y a-t-il une tenue vestimentaire particulière pour assister à l’évènement ?
+			    </h3>
+			    <div class="faq-text">
+			    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+			    </div>
+			    <button class="faq-toggle">
+			      <i class="fas fa-angle-down"></i>
+			    </button>
+			  </div>
+
+			  <div class="faq">
+			    <h3 class="faq-title">
+			      Puis-je obtenir un remboursement si je ne peux pas y assister ?
+			    </h3>
+			    <div class="faq-text">
+			    	<p>Nous ne proposons pas de remboursement</p>
+			    </div>
+			    <button class="faq-toggle">
+			      <i class="fas fa-angle-down"></i>
+			    </button>
+			  </div>
+			</div>
+		</div>
+
+
+		<div class="page-section section-img-jeremy-1 pt-5 pb-5">
+			<div class="overlay"></div>
+			<div class="img-jeremy">
+				<img class="animated-zoom-in" src="assets/img/jeremy2-1.png" width="300px">
+			</div>
+			<div class="description">
+				<p>GAGNEZ 10 ANS D’EXPÉRIENCE EN 1 JOURNÉE GR CE AUX PLUS GRANDS NOMS DE L’ENTREPRENEURIAT FRANCOPHONE</p>
+
+				<div class="sponsor-container">
+					<div class="sponsor-list d-flex align-items-center justify-content-center">
+						<div class="sponsor-item">
+							<img src="assets/img/logo-small-white.png" class="sponsor">
+						</div>
+						<div class="sponsor-item">
+							<img src="assets/img/logo-small-white.png" class="sponsor">
+						</div>
+						<div class="sponsor-item">
+							<img src="assets/img/logo-small-white.png" class="sponsor">
+						</div>
+						<div class="sponsor-item">
+							<img src="assets/img/logo-small-white.png" class="sponsor">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</main>
 
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<footer class="footer mt-5">
+
+		<div class="description-container d-flex align-items-center">
+
+			<div class="footer-img">
+				<img src="assets/img/logo.png" class="logo">
+			</div>
+			<div class="description-content">
+				<p style="font-size: 22px">
+					© <span class="copyright">Jérémy & EVEN</span> 2022 all rights reserved CGU
+				</p>
+				<hr class="separate">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+				</p>
+			</div>
+		</div>
+
+	</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function scrollToTarget(target) {
+	  const targetElement = document.getElementById(target);
+	  targetElement.scrollIntoView({ behavior: "smooth" });
+	}
+
+	const buttons = document.querySelectorAll(".faq-toggle");
+
+	buttons.forEach((button) => {
+	  button.addEventListener("click", () =>
+	    button.parentElement.classList.toggle("active")
+	  );
+	});
+</script>
 </body>
 </html>
